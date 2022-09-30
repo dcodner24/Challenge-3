@@ -54,7 +54,7 @@ function generatePassword() {
         
     }
 
-    if (availChars == "" && (numChars <= 128  || numChars >= 8)){
+    if (availChars == "" && numChars <= 128  && numChars >= 8){
     alert("Invalid input, password must contain at least one character type.");
     stop();
         }
@@ -76,4 +76,4 @@ function writePassword() {
   
     passwordText.value = password;
   
-  }
+  } 
